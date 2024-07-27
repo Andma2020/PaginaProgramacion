@@ -115,7 +115,7 @@ header a:hover{
 }
 
 #nuestros-programas .container{
-    padding: 150px 12px;
+    padding: 150px 12px  ;
 }
 
 #nuestros-programas h2{
@@ -164,6 +164,8 @@ header a:hover{
 
 }
 
+
+
 #caracteristicas .container{
     text-align: center;
     padding: 250px 12px;
@@ -184,6 +186,16 @@ header a:hover{
     color: white;
     height: 80vh;
 }
+
+#final form{
+    display: flex; 
+   
+    line-height: 40px; 
+    flex-direction: column;    
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;}
+
 
 #final h2{
     font-size: 9vw;
@@ -321,7 +333,7 @@ footer .container{
         background-position: calc(100vw - 500px) 120px;
     }
 
-    #caracteristicas .container{
+    #caracteristicas .container{        
         text-align: initial;
     }
 
@@ -340,6 +352,113 @@ footer .container{
     footer .container{
         justify-content: flex-end;
     }
+}
+
+
+#Contacto .container{
+          width: 100%;
+          height: 100vh;
+          background-color:blueviolet;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+}
+
+.form-content{
+         width: 450px;
+         max-width: 450px;
+         background-color:rgb(199, 192, 206);
+         padding: 50px 60px 70px;
+         text-align: center;
+         border-radius: 25px;     
+  
+}
+
+.form-content h2{
+
+    font-size: 40px;
+    margin-bottom: 60px;
+    color: black;
+    position: relative;
+}
+
+
+.form-content h2::after{
+content:'';
+width: 90px;
+height: 4px;
+border-radius: 3px;
+background: #048070;
+position: absolute;
+bottom: -5px;
+left:120px;
+transform-style: translateX(-50%);
+}
+
+.input-field{
+ background-color: #515966;
+ margin: 15px 0;
+ border-radius: 3px;
+ display: flex;
+ align-items: center;
+ transition: max-height 05s;
+ overflow: hidden;
+
+}
+
+input{
+  width: 100px;
+  background: transparent;
+  border: 0;
+  outline: none;
+  padding: 18px 15px;
+  color: #FFFF;
+}
+
+input::placeholder{
+color: #FFFF;
+}
+
+.input-field i{
+   margin-left: 15px;
+   color: #048070;
+}
+
+form p{
+   color: #FFFF;   
+   text-align: left;
+   font-size: 15px;
+}
+
+
+form p a {
+
+   color:#048070;
+   margin-left: 5px;
+}
+
+.btn-field {
+   width: 100%;
+   display: flex;
+   justify-content: space-between; 
+}
+
+.btn-field button{
+
+        flex-basis: 48%;
+        font-size: 16px;
+        background-color:blueviolet;
+        color: #FFFF;
+        height: 40px;
+        border-radius: 10px;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        transition: background 1s;
+}
+
+.btn-field button:hover{
+    background-color: rgb(101, 33, 165);
 }
 
 @media (min-width: 1200px) {
